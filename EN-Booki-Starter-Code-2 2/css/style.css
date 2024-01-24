@@ -1,0 +1,399 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --main-color: #0065FC;
+    --main-bg-color: #F2F2F2;
+    --filter-bg-color: #DEEBFF;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--main-color);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.nav-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-self:stretch;
+}
+
+.logo{
+    width: 80px;
+    padding-top: 20px;
+}
+
+.nav-menuItem ul {
+    padding-bottom:60px;
+    gap: 68px;
+    display: flex;
+    flex-flow: row wrap ;
+    min-width: min-content;
+    padding-top: 10px;
+    justify-content: stretch;
+    text-decoration: none;
+    list-style: none;
+    margin-top: 0%;
+}
+
+.nav-menuItem li a{
+    color: black;
+}
+
+
+
+.nav-menuItem a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top: 10px;
+    color: var(--main-color);
+    
+
+}
+
+.intro-text{
+    padding-bottom: 30px;
+    line-height: 10px;
+}
+
+.search-form{
+    padding-bottom: 40px;
+    display: flex;
+
+}
+
+.b-map {
+    width: 50px;
+    height: 50px;
+    border-radius: 15px 1px 1px 15px;
+    border:0px;
+    background-color: #F2F2F2;
+
+}
+
+:placeholder-shown{
+    display: flex;
+    width: 150px;
+    min-height: 45px;
+    border:1px solid var(--Grey, #F2F2F2);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color:var(--Black, #000);
+    font-style: normal;
+}
+
+.input{
+    text-align: center;
+}
+
+
+.b-search{
+    background-color:  #0065FC;
+    height: 50px;
+    border-radius: 1px 15px 15px 1px;
+    border: 0px;
+    font-size: 18px;
+    color: #DEEBFF;
+    padding: 15px 16px;
+    font-weight: 700;
+    font-style:normal ;
+
+}
+
+.filter-section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    gap: 10px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.filter-section :hover{
+    background-color: #DEEBFF;
+}
+.Budget{
+    border-radius: 25px;
+    border: 2px solid var(--grey-tint-2,#D9D9D9);
+    background-color: var(--White, #FFF);
+    font-size: 17px;
+    font-weight: 700;
+    padding: 4px 19px;
+    gap:10px;
+    height: 50px;
+}
+
+.family-friendly{
+    border-radius: 25px;
+    font-size: 17px;
+    padding: 4px 19px;
+    border:2px solid  var(--grey-tint-2,#D9D9D9);
+    background-color: White;
+    font-weight: 700;
+    height: 50px;
+}
+
+.romantic{
+    border-radius: 25px;
+    font-size: 17px;
+    background-color: white;
+    font-weight: 700;
+    font-style: normal;
+    border:2px solid var(--grey-tint-2,#D9D9D9);
+    padding: 4px 19px;
+    height: 50px;
+}
+
+.OurtopPicks{
+    border-radius: 25px;
+    background-color:  #DEEBFF;
+    border:2px solid var(--grey-tint-2,#D9D9D9);
+    font-size: 17px;
+    font-weight: 700;
+    padding: 4px 19px;
+    font-style: normal;
+    height: 50px;
+}
+
+.info-bar{
+    padding-bottom: 40px;
+    padding-top: 0px;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 22px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.euro {
+    font-weight: 700;
+}
+
+.neutralStar {
+    color: var(--main-bg-color)
+}
+
+
+/****** Accommodation And Popular ***********/
+.accommodation-and-popular {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accommodation-and-popular section {
+    background-color: var(--main-bg-color);
+    border-radius: 20px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+/****** Accommodation ***********/
+.accommodation {
+    width:64%;
+    
+}
+
+.section-title{
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title a{
+    color: black;
+}
+
+.text-color{
+    text-decoration: none;
+}
+
+.accommodation-cards a{
+    color: black;
+}
+
+.accommodation-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+
+.accommodation-cards .card{
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 80px) / 3);
+    gap:20px;
+}
+.card-body{
+    line-height: 10px;
+    padding-left: 10px;
+    padding-bottom:10px;
+}
+
+.accommodation-cards .card h4{
+    margin-top: 6px;
+    margin-bottom: 5px;
+}
+
+
+.accommodation-cards img{
+    width: 100%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    height: 124px;
+}
+
+
+/****** Popular ***********/
+.popular {
+  width:32%;
+}
+
+.popular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.popular-cards img {
+    width: 33%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.popular-cards .card-content {
+    width: 67%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.popular-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.popular-cards .card-subtitle {
+    margin: 0;
+}
+
+.popular-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
+
+/******things to do*********/
+
+.things-cards{
+    padding-left:2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 10%;
+    height: fit-content;
+    justify-content: center;
+}
+
+
+ .card-bottom{
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+}
+.section-3{
+    padding-left: 3%;
+    padding-top: 10%;
+    gap: 5px;
+}
+.things-cards img{
+    border-radius: 20px 20px 0px 0px;
+    width: 290px;
+    height: 380px;
+    object-fit: cover;
+}
+
+.bottonOfcard{
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+/******footer********/
+
+.footer-section{
+    display: flex;
+    background-color: #F2F2F2;
+    height: 155px;
+    justify-content:space-between;
+    padding-right: 20%;
+    gap: 30px;
+}
+
+.nav2{
+    list-style: none;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "raleway";
+    gap: 20px;
+    padding-right: 30px;
+    justify-content:space-evenly;
+
+}
+
+.li-title{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    display: flex;
+    margin-right: 15px;
+}
+
+.text-styling{
+    text-decoration: none;
+}
+
+.nav2 li a{
+    color: black;
+}
+
